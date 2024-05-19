@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Krishna </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        #bg-test {
+            background-image: url('hh.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            position: relative;
+            height: 500px; /* Set the height of the background image */
+        }
+
+        #text-over-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #button-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #button-center:hover {
+            background-color: #3e8e41;
+        }
+
+        #message {
+            display: none;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 10px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%; /* Adjust this value to reduce the size of the collage */
+            height: 60px; /* Adjust this value to reduce the size of the collage */
+        }
+
+      .collage-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<div id="bg-test">
+    <div id="collage">
+        <img class="collage-image" src="h.jpg" alt="Image 1">
+        <img class="collage-image" src="s.jpg" alt="Image 2">
+        <img class="collage-image" src="i.jpg" alt="Image 3">
+        <img class="collage-image" src="r.jpg" alt="Image 4">
+    </div>
+    <div id="text-over-image">
+        <h1>I love you Krishna </h1>
+        <p>    I wanna spend the rest of my life with you. I knew it that I deserve better but I never knew that I deserve a best person like you. I wanna sleep with you. I wanna wake up with you. I wanna have a family with you. I want us to grow together and make our relationship more strong than ever. I'm gonna support you always. I wish you were here with me holding my hands while I'm typing this text for you. </p>
+
+    </div>
+    <button id="button-center" onclick="showMessage()">Click me!</button>
+    <div id="message">Krishna, you're my first thought  in the morning and my last thought at night since I met you. I only think about you. I was never this much happy when I'm with you. I really love you. </div>
+
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+</body>
+</html>
